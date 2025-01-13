@@ -1,0 +1,90 @@
+/*Colors used:
+Background Color #FFFCF8
+Secondary Background Color #FFE6CC
+Text Color #00010D
+Pop of Color #86687F
+Secondary Pop of Color #CFBBC1
+Link Color #875EBD 
+*/
+
+img {
+    width: 100%;
+  }
+
+  body{
+    background-color: #FFFCF8;
+    font-family: 'mulish', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #00010D;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'roboto slab', serif;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+    h2 {
+        font-size: 2.25em;
+        font-weight: 700;
+    }
+    h3 {
+        font-size: 1.75em;
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    a {
+      color: #875EBD ; 
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: #86687F;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: #6A5164;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #86687F;
+      color: #FFFCF8;
+      padding: 10px 20px;
+      border-radius: 3px;
+      border-bottom: 2px solid #6A5164;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.2s opacity;
+    }
+
+    .button:hover, .button:active {
+      opacity: 0.8;
+      text-decoration: none;
+      color: #FFFCF8;
+    }
+
+    .button.contact {
+      background-color: transparent;
+      color: #86687F;
+      text-transform: uppercase;
+      border: 2px solid #86687F;
+    }
+
+    .button.contact:hover, .button.contact:active {
+      background-color: #86687F;
+      color: #FFFCF8;
+    }
+    
