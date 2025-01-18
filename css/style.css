@@ -7,6 +7,10 @@ Secondary Pop of Color #CFBBC1
 Link Color #875EBD 
 */
 
+* {
+  box-sizing: border-box;
+}
+
 img {
     width: 100%;
   }
@@ -88,3 +92,101 @@ img {
       color: #FFFCF8;
     }
     
+/* Layout styling */
+
+header {
+  background-color: #FFE6CC;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+    width: [object Object]px; 
+    height: [object Object]px; 
+    background: #FFE6CC; 
+    border: solid #BDBDBD 1px; 
+    box-shadow: 0 4px 21px rgba(0, 0, 0, 0.5)  ; 
+    -webkit-box-shadow: 0 4px 21px rgba(0, 0, 0, 0.5)  ; 
+    -moz-box-shadow: 0 4px 21px rgba(0, 0, 0, 0.5)  ; 
+}
+
+main {
+  padding-top: 240px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.logo{
+  max-width: 250px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #86687F;
+}
+
+nav ul li a.visited {
+  color: #00010D;
+}
+
+nav ul li a:hover, nav ul li a:active {
+  color: #6A5164;
+}
+
+#hero {
+  background-color: #FFE6CC;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#projects {
+  background-color: #FFFCF8;
+  display: inline-block;
+  width: 100%;
+}
+
+#projects, h2 {
+  text-align: center;
+}
+
+#projects, h3, p {
+  text-align: left; 
+}
+
+#contact {
+  background-color: #FFE6CC;
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#blissbody, h3 {
+  text-align: center;
+}
