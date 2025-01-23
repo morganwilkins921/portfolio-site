@@ -12,10 +12,14 @@ Link Color #875EBD
 }
 
 img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  body{
+.resize {
+  width: 300px;
+}
+
+  body {
     background-color: #FFFCF8;
     font-family: 'mulish', serif;
     font-size: 16px;
@@ -48,12 +52,14 @@ img {
     a {
       color: #875EBD ; 
       text-decoration: none;
+      transition: 0.4s opacity;
     }
 
     a:hover,
     a:focus {
       color: #86687F;
       text-decoration: underline;
+      opacity: 1.5;
     }
 
     a:active {
@@ -71,10 +77,11 @@ img {
       text-align: center;
       text-decoration: none;
       cursor: pointer;
-      transition: 0.2s opacity;
+      transition: 0.4s opacity;
     }
 
     .button:hover, .button:active {
+      cursor: pointer;
       opacity: 0.8;
       text-decoration: none;
       color: #FFFCF8;
@@ -92,6 +99,34 @@ img {
       color: #FFFCF8;
     }
     
+    @keyframes color-change {
+      0% {fill: #edc655;}
+      50% {fill: #fcffad;}
+      100% {fill: #f76414;}
+    }
+
+    .sun {
+      animation: 4s color-change infinite alternate linear;
+    }
+
+    @keyframes cloud-move {
+      from {transform: translate(0,50px);}
+      to {transform: translate(200px,50px);}
+    }
+
+    .cloud-front {
+      animation: 30s cloud-move infinite alternate linear;
+    } 
+
+    @keyframes cloud-move-reverse {
+      from {transform: translate(446px,48px);}
+      to {transform: translate(100px, 48px);}
+    }
+
+    .cloud-back {
+      animation: 34s cloud-move-reverse infinite alternate linear;
+    }
+
 /* Layout styling */
 
 header {
@@ -110,7 +145,7 @@ header {
 }
 
 main {
-  padding-top: 240px;
+  padding-top: 256px;
 }
 
 .container {
@@ -164,7 +199,7 @@ nav ul li a:hover, nav ul li a:active {
 #projects {
   background-color: #FFFCF8;
   display: inline-block;
-  width: 100%;
+  max-width: 1200px;
 }
 
 #projects, h2 {
@@ -189,4 +224,65 @@ h1, h2 {
 
 #blissbody, h3 {
   text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 55px;
+}
+
+main {
+  padding-top: 216px;
+}
+
+body {
+  font-size: 18px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px 10px;
+}
+
+#projects h3 { margin-top: 0; }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+}
+
+@media only screen and (min-width: 1920px) {
+
 }
