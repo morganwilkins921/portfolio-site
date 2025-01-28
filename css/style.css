@@ -15,6 +15,15 @@ img {
   width: 100%;
 }
 
+.resize {
+  max-width: 50%;
+  max-height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
   body {
     background-color: #FFFCF8;
     font-family: 'mulish', serif;
@@ -99,6 +108,20 @@ img {
 
     .button.contact:hover, .button.contact:active {
       background-color: #86687F;
+      color: #FFFCF8;
+    }
+
+    .button.process {
+      background-color: transparent;
+      color: #00010D;
+      text-transform: uppercase;
+      border: 2px solid #00010D;
+      margin: 4px 4px;
+      display: inline-block; 
+    }
+
+    .button.process:hover, .button.process:active {
+      background-color: #00010D;
       color: #FFFCF8;
     }
     
@@ -266,7 +289,7 @@ h1, h2 {
   text-align: center;
 }
 
-.email{
+.email {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -276,6 +299,11 @@ h1, h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.process {
+  display: block;
+ text-align: center;
 }
 
 @media only screen and (min-width: 640px) {
@@ -293,6 +321,11 @@ nav {
   width: auto;
   float: right;
   margin-top: 45px;
+}
+
+#process {
+  margin-top: unset;
+  float: unset;
 }
 
 nav ul {
