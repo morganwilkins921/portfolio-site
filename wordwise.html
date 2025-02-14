@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5a08ead9a4.js" crossorigin="anonymous"></script>
+
+    <title>Morgan Wilkins UX/UI Designer</title>
+</head>
+
+<body>
+
+    <header id="navigation">
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img src="img/logo.png" class="logo" alt="Morgan Wilkins logo"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <div class="dropdown">
+                            <li class="dropbtn">Work
+                                <i class="fa-solid fa-chevron-down"></i></li>
+                                <div class="dropdown-content">
+                                    <a href="blissbody.html">Bliss Body</a>
+                                    <a href="wordwise.html">Word Wise</a></div></div>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                    <i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="wordwise">
+
+                <h1>Word Wise Project</h1>
+            </div>
+
+            <div>
+                <picture>
+                    <source srcset="img/wordwise/wordwise_welcome@1x.jpg" media="(max-width: 767px)">
+                    <img src="img/wordwise/wordwise_welcome@2x.jpg" alt="Word Wise wireframes">
+                </picture>
+
+                <div>
+                    <h3>Overview</h3>
+                    <p>
+                        WordWise is a vocabulary learning app designed to make language acquisition engaging, efficient,
+                        and personalized. With spaced repetition, contextual examples, and interactive quizzes, WordWise
+                        helps users build lasting vocabulary skills in a fun and intuitive way.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Problem Statement</h3>
+                    <p>
+                        Many vocabulary learning apps focus on rote memorization, making it difficult for users to
+                        retain and apply new words in real-world contexts.
+
+                        How might we create a vocabulary learning experience that enhances retention, provides
+                        contextual meaning, and keeps users engaged?</p>
+                </div>
+
+                <div>
+                    <h2>Research and Discovery</h2>
+
+                    <h3>User Interviews</h3>
+                    <p>
+                        To understand users’ struggles with vocabulary learning I conducted 4 user interviews with
+                        students, professionals, and language learners
+                    </p>
+
+                    <p>Key Insights from Research:</p>
+                    <ul>
+                        <li>Context Matters: Users remember words better when they see them in sentences or
+                            real-life examples</li>
+                        <li>Engagement is Key: Gamified experiences (quizzes, streaks, rewards) increase motivation
+                        </li>
+                        <li>Personalization Helps: Users prefer adaptive learning paths over one-size-fits-all
+                            lessons.</li>
+                    </ul>
+
+                    <h3>Competitive Analysis</h3>
+                    <p>I analyzed Quizlet, Brainscape, and Anki to identify strengths and gaps.</p>
+
+                    <h4>Quizlet</h4>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_quizlet1@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_quizlet1@2x.jpg" alt=" ">
+                    </picture>
+
+                    <p>Strengths:</p>
+                    <ul>
+                        <li>Clear benefits and features displayed on launch page</li>
+                        <li>Easy sign-up with Apple/Google/Facebook integration</li>
+                        <li>AI-powered auto-creation of study materials from notes and textbooks</li>
+                        <li>Options to connect with school courses or browse general study sets</li>
+                        <li>Multiple study formats with customizable settings, including read-aloud options</li>
+                        <li>Social learning features like multiplayer study activities</li>
+                        <li>Ads are present but not intrusive</li>
+                    </ul>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_quizlet2@2x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_quizlet2@2x.jpg" alt=" ">
+                    </picture>
+
+                    <p>Weaknesses:</p>
+                    <ul>
+                        <li>Paid plans are introduced early, despite the app being advertised as free</li>
+                        <li>No clear onboarding to guide new users</li>
+                        <li>Interface changes drastically after adding school/course details</li>
+                        <li>Some features (e.g., Solutions tab, Learn feature) lack clear explanations</li>
+                        <li>Limited clarity on free vs. paid features outside of sign-up and upgrade screens</li>
+                        <li>Help Center is hard to find</li>
+                        <li>Read Aloud speed can’t be adjusted</li>
+                    </ul>
+
+                    <h4>Brainscape</h4>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_brainscape1@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_brainscape1@2x.jpg" alt=" ">
+                    </picture>
+
+                    <p>Strengths:</p>
+                    <ul>
+                        <li>Clear benefits and features displayed on launch page</li>
+                        <li>Quick sign-up with Apple/Google</li>
+                        <li>Tracks study metrics like time studied and streaks</li>
+                        <li>Onboarding provided when joining a class</li>
+                        <li>Supports multimedia on flashcards and text formatting</li>
+                        <li>Certified flashcards from verified sources</li>
+                        <li>Users can collaborate with classmates under the Learners tab</li>
+                        <li>Articles provide study tips and exam prep resources</li>
+                    </ul>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_brainscape2@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_brainscape2@2x.jpg" alt=" ">
+                    </picture>
+
+                    <p>Weaknesses:</p>
+                    <ul>
+                        <li>No onboarding before prompting users to start</li>
+                        <li>Auto-populated classes on the home screen may feel impersonal</li>
+                        <li>Account settings are hard to locate</li>
+                        <li>Many features are locked behind a paywall (e.g., adding media to flashcards)</li>
+                        <li>Bottom navigation buttons are unlabeled</li>
+                        <li>Limited study formats—only traditional flashcards</li>
+                        <li>Users must rate each card before moving on, which slows studying</li>
+                        <li>No read-aloud feature for accessibility</li>
+                        <li>Search results lack sorting, making it hard to find relevant content</li>
+                    </ul>
+
+                    <h4>Anki Pro</h4>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_anki1@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_anki1@2x.jpg" alt=" ">
+                    </picture>
+
+                    <p>Strengths:</p>
+                    <ul>
+                        <li>Clear benefits and features listed on launch</li>
+                        <li>Personalized experience through an initial questionnaire</li>
+                        <li>Transparent subscription and cancellation instructions</li>
+                        <li>Supports importing decks from other apps with a guide</li>
+                        <li>Seamless flashcard creation with text formatting and sharing options</li>
+                        <li>Text-to-speech available for accessibility</li>
+                        <li>Offers multiple study modes, including typing answers</li>
+                        <li>Ability to freeze, move, or delete multiple cards at once</li>
+                    </ul>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_anki2@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_anki2@2x.jpg" alt=" ">
+                    </picture>
+
+                    <p>Weaknesses:</p>
+                    <ul>
+                        <li>Paid app but not advertised as such in the app store</li>
+                        <li>No onboarding after the initial questionnaire</li>
+                        <li>Logging in isn’t prompted or clearly indicated</li>
+                        <li>Limited pre-populated decks for browsing</li>
+                        <li>Study directions can obstruct flashcard content</li>
+                        <li>Must duplicate a deck before studying</li>
+                        <li>No option to remove the rating feature when reviewing</li>
+                        <li>Navigation back to the home page is unclear after using multiple features</li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <h2>Ideation and Information Architecture</h2>
+
+                    <h3>User Persona</h3>
+                    <p>I developed a proto persona based on research to map out a users’ learning journey to
+                        identify friction points.</p>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_persona@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_persona@2x.jpg" alt=" ">
+                    </picture>
+
+                    <h3>User Goals and Needs</h3>
+                    <p>Based on user research, I identified key goals and needs for WordWise users.</p>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_goalsneeds@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_goalsneeds@2x.jpg" alt=" ">
+                    </picture>
+
+                    <h3>User Flows</h3>
+                    <p>I designed streamlined user flows with the goal of little friction both when creating flashcard
+                        sets and reviewing flashcard sets</p>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_taskflow1@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_taskflow1@2x.jpg" alt=" ">
+                    </picture>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_taskflow2@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_taskflow2@2x.jpg" alt=" ">
+                    </picture>
+
+                </div>
+
+                <div>
+                    <h2>Wireframing and Prototyping</h2>
+                    <p>I started with hand-drawn sketches and wireframes to explore initial ideas for each task then
+                        built low-fidelity prototypes to gain feedback
+                        from user testing.</p>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_lofiwireframes1@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_lofiwireframes1@2x.jpg" alt=" ">
+                    </picture>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_lofiwireframes2@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_lofiwireframes2@2x.jpg" alt=" ">
+                    </picture>
+
+                </div>
+
+                <div>
+                    <h2>Usability Testing and Insights</h2>
+                    <p>I conducted usability testing with 5 participants using my low-fidelity prototype.</p>
+                    <p>Key Observations from Testing:</p>
+                    <ul>
+                        <li>Questionnaire is long and users aren’t sure this is needed to create a
+                            new account</li>
+                        <li>Email and password shown on initial splash screen is confusing for
+                            new users</li>
+                        <li>Unclear how to scan physical flashcards after pressing this function</li>
+                        <li>Unclear how to start study session after choosing flashcard set</li>
+                        <li>Unclear that “check” and “x” are pressable when reviewing
+                            flashcards</li>
+                            <li>Unclear that user needs to press “tap to reveal” during study session</li>
+                    </ul>
+
+                    <h2>Iterations Based on Testing</h2>
+                    <p>Based on user feedback, I made the following changes to the prototype:</p>
+                    <ul>
+                        <li>Condensed questionnaire to one screen by giving ability to scroll</li>
+                        <li>Hid email and password on initial splash screen</li>
+                        <li>Added direction to scan physical flashcards with phone camera</li>
+                        <li>Shifted arrows to be inside preview flashcards</li>
+                        <li>Made the “check” and “x” look like buttons when reviewing flashcards</li>
+                    </ul>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_midfiwireframes@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_midfiwireframes@2x.jpg" alt=" ">
+                    </picture>
+                </div>
+
+                <div>
+                    <h2>Conclusion</h2>
+                    <p>WordWise isn’t just about memorizing words—it’s about mastering vocabulary for real-world
+                        use. By combining contextual learning, gamification, and personalized study plans, the app
+                        empowers users to expand their vocabulary in a meaningful way.</p>
+
+                    <h3>Next Steps</h3>
+                    <ul>
+                        <li>Conduct further usability testing to refine UI components.</li>
+                        <li>Usability testing with high-fidelity prototype</li>
+                        <li>Iterate based on feedback</li>
+                    </ul>
+
+                    <picture>
+                        <source srcset="img/wordwise/wordwise_hifiwireframes@1x.jpg" media="(max-width: 767px)">
+                        <img src="img/wordwise/wordwise_hifiwireframes@2x.jpg" alt=" ">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div id="center">
+                <h2>Get In Touch</h2>
+                <p>Have questions or opportunities? Let’s connect to discuss how I can help bring your ideas to life.
+                </p>
+                <div class="email">
+                    <a href="mailto:morgansimonedesigns@gmail.com" class="button contact">Email Me</a>
+                </div>
+
+
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/morgan-wilkins-28ab34126" target="_blank">
+                        <svg id="Layer_1" style="enable-background:new 0 0 1000 1000;" version="1.1"
+                            viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: #0078B5;
+                                }
+
+                                .st1 {
+                                    fill: #FFFFFF;
+                                }
+                            </style>
+                            <title />
+                            <g>
+                                <path class="st0"
+                                    d="M500,1000L500,1000C223.9,1000,0,776.1,0,500l0,0C0,223.9,223.9,0,500,0l0,0c276.1,0,500,223.9,500,500l0,0   C1000,776.1,776.1,1000,500,1000z" />
+                                <g>
+                                    <g>
+                                        <path class="st1"
+                                            d="M184.2,387.3h132.9v427.7H184.2V387.3z M250.7,174.7c42.5,0,77,34.5,77,77.1s-34.5,77.1-77,77.1     c-42.6,0-77.1-34.5-77.1-77.1C173.5,209.3,208,174.7,250.7,174.7" />
+                                        <path class="st1"
+                                            d="M400.5,387.3H528v58.4h1.8c17.7-33.6,61-69.1,125.8-69.1c134.6,0,159.5,88.6,159.5,203.7v234.7H682.2V607.1     c0-49.7-0.9-113.4-69.1-113.4c-69.2,0-79.8,54-79.8,109.8v211.6H400.5V387.3z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.behance.net/gallery/214373017/BlissBody-Health-and-Wellness-App"
+                        target="_blank">
+                        <svg data-name="Layer 1" id="Layer_2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <title />
+                            <path d="M191.32,267.878h-46.3v50.687h46.3a25.344,25.344,0,1,0,0-50.687Z" />
+                            <path
+                                d="M212.622,212.989A23.924,23.924,0,0,0,188.7,189.064l-.1-.055-.022.055H145.023v47.85H188.7A23.925,23.925,0,0,0,212.622,212.989Z" />
+                            <path
+                                d="M334.578,240.281a30.557,30.557,0,0,0-30.339,26.928h60.679A30.557,30.557,0,0,0,334.578,240.281Z" />
+                            <path
+                                d="M256,0C114.615,0,0,114.615,0,256S114.615,512,256,512,512,397.385,512,256,397.385,0,256,0ZM203.344,349.528h-94.8V158.1h91.9a48.7,48.7,0,0,1,22.265,92.007,51.6,51.6,0,0,1-19.368,99.42Zm84.3-180.255h92.87v22.8h-92.87ZM400.986,292.137H304.542q-.022.612-.023,1.229a31.517,31.517,0,0,0,58.73,15.9l.064.037h36.85c-9.006,30.666-35.887,44.447-65.2,44.447-38.812,0-67.687-32.007-67.687-71.489s28.875-71.489,67.687-71.489S407.876,244.105,400.986,292.137Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <p>Copyright Morgan Wilkins 2025</p>
+
+            </div><!--end center-->
+        </div><!--end container-->
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
